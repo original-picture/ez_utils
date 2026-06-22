@@ -1,4 +1,5 @@
 
+/// this file can be used header-only
 #pragma once
 
 #include <algorithm>
@@ -9,8 +10,8 @@ namespace ez {
         return (float_type(1)-factor)*a + factor*b;
     }
 
-    float  fpi = 3.14159265358979323846264f;
-    double dpi = 3.14159265358979323846264 ;
+    inline static constexpr float  fpi = 3.14159265358979323846264f;
+    inline static constexpr double dpi = 3.14159265358979323846264 ;
 
     template<typename float_type>
     float_type clamp(float_type number, float_type lower_bound = float_type(-1), float_type upper_bound = float_type(1)) {
